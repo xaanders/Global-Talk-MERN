@@ -8,7 +8,7 @@ import { errorActions } from "../reducers/error-slice";
 export const registerUser = (userData, navigate, dispatch) => {
     dispatch(userActions.userLoading(true));
     axios
-        .post("http://localhost:5000/router/users/register", userData)
+        .post("https://global-talk.herokuapp.com/router/users/register", userData)
         .then(res => navigate("/login")) // re-direct to login on successful register
         .catch(err => {
             if (!err.response) {
@@ -25,7 +25,7 @@ export const registerUser = (userData, navigate, dispatch) => {
 export const loginUser = (userData, navigate, dispatch) => {
     dispatch(userActions.userLoading(true));
     axios
-        .post("http://localhost:5000/router/users/login", userData)
+        .post("https://global-talk.herokuapp.com/router/users/login", userData)
         .then(res => {
             // Save to localStorage
             // Set token to localStorage
@@ -53,7 +53,7 @@ export const loginUser = (userData, navigate, dispatch) => {
 };
 export const setUserProfile = (profileData, dispatch) => {
     axios
-        .patch("http://localhost:5000/router/profiles/", profileData)
+        .patch("https://global-talk.herokuapp.com/router/profiles/", profileData)
         .then(res => {
             dispatch(userActions.setUserProfile(res.data));
         })
@@ -68,7 +68,7 @@ export const setUserProfile = (profileData, dispatch) => {
 };
 export const getUserProfile = (profileId, dispatch) => {
     axios
-        .post("http://localhost:5000/router/profiles/", profileId)
+        .post("https://global-talk.herokuapp.com/router/profiles/", profileId)
         .then(res => {
             if (res.data) {
                 dispatch(userActions.setUserProfile(res.data));
