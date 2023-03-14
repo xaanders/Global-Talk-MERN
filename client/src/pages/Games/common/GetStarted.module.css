@@ -1,0 +1,164 @@
+.getstarted {
+    padding: 100px 0;
+}
+
+.message {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
+    border-radius: 14px;
+
+}
+
+.getstarted-title {
+    max-width: 490px;
+}
+
+.getstarted-title .badge {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    color: #2B788B;
+    background-color: #fff;
+    background: #C3DCE3;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+.btn-login {
+    font-size: 16px !important;
+}
+
+@media screen and (max-width: 768px) {
+
+    .getstarted .image {
+        max-width: 300px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .getstarted {
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .getstarted-title {
+        max-width: 231px;
+        font-size: 24px !important;
+    }
+
+    .getstarted .image {
+        max-width: 60px !important;
+    }
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.list-item .radio-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 44px;
+    width: 44px;
+    cursor: pointer
+}
+
+
+.text {
+    max-width: 458px;
+}
+
+.list-item .checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+.list-item .checkmark.green {
+    border: 3px solid #639B6D;
+    color: #639B6D;
+}
+
+.list-item .checkmark.yellow {
+    border: 3px solid #C4A24C;
+    color: #C4A24C;
+
+}
+
+.list-item .checkmark.orange {
+    border: 3px solid #CB5B43;
+    color: #CB5B43;
+
+}
+
+.list-item .checkmark.red {
+    border: 3px solid #A95151;
+    color: #A95151;
+
+}
+
+.list-item .checkmark.purple {
+    border: 3px solid #A15993;
+    color: #A15993;
+
+
+}
+
+.list-item .checkmark.blue {
+    border: 3px solid #5996A5;
+    color: #5996A5;
+
+}
+
+
+.list-item .radio-item:checked+.checkmark {
+    color: #ffffff;
+}
+
+.list-item .radio-item:checked+.checkmark.green {
+    background-color: #639B6D;
+}
+
+.list-item .radio-item:checked+.checkmark.yellow {
+    background-color: #C4A24C;
+}
+
+.list-item .radio-item:checked+.checkmark.orange {
+    background-color: #CB5B43;
+}
+
+.list-item .radio-item:checked+.checkmark.red {
+    background-color: #A95151;
+}
+
+.list-item .radio-item:checked+.checkmark.purple {
+    background-color: #A15993;
+}
+
+.list-item .radio-item:checked+.checkmark.blue {
+    background-color: #5996A5;
+}
+
+.error {
+    height: 50px;
+    margin: 0;
+    padding: 5px;
+    
+}

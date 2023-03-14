@@ -1,0 +1,38 @@
+.no-statistics {
+    padding: 100px 0;
+}
+
+.message {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
+    border-radius: 14px;
+
+}
+
+.no-statistics-title {
+    max-width: 490px;
+}
+
+.btn-login {
+    font-size: 16px !important;
+}
+@media screen and (max-width: 768px) {
+
+    .no-statistics .image{
+        max-width: 300px !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .no-statistics {
+        padding: 100px 0;
+        text-align: center;
+    }
+    .no-statistics-title {
+        max-width: 231px;
+        font-size: 24px !important;
+    }
+    .no-statistics .image{
+        max-width: 60px !important;
+    }
+}

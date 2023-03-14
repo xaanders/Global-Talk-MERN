@@ -1,0 +1,196 @@
+.total-box {
+    margin: 100px 0;
+}
+
+
+@media screen and (max-height: 768px) {
+    .total-box {
+        margin: 40px 0;
+    }
+}
+
+.total,
+.words-box {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .total,
+    .words-box {
+        width: 100%;
+        height: unset !important;
+        padding: 20px;
+    }
+}
+
+
+.total {
+    background-color: #fff;
+    box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
+    border-radius: 14px;
+}
+
+.circle {
+    width: 114px;
+    height: 114px;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+@media screen and (max-width: 300px) {
+    .circles {
+        flex-direction: column;
+    }
+}
+
+
+.circle-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.circle-info p {
+    margin: 0;
+}
+
+.actions {
+    margin-top: 30px;
+}
+
+.label {
+    color: #000000 !important;
+}
+.total .replay {
+    color: #000000 !important;
+    background-color: unset !important;
+    padding: 0 !important;
+    border: none;
+}
+
+.total .replay:hover {
+    color: #2B788B !important;
+    text-decoration-line: underline !important;
+    transition: all 0.15s ease;
+
+}
+
+.words-box {
+    background-color: #fff;
+    gap: 20px;
+    box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
+    border-radius: 14px;
+}
+
+.words-list {
+    height: 256px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px
+}
+@media screen and (max-width: 468px) {
+    .knowledge {
+        width: 100%;
+    }
+    .iknow .title, .idknow .title {
+        font-size: 24px !important;
+    }
+    .content {
+        text-align: center;
+    }
+    .content .main-title {
+        font-size: 24px !important;
+    } 
+}
+
+.words-box .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2rem !important;
+}
+
+.badge {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+    padding: 4px 8px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.iknow .badge {
+    color: #2B788B;
+    background-color: #C3DCE3;
+}
+
+.idknow .badge {
+    color: #945069;
+    background: #F2D4DC;
+}
+
+.audio {
+    color: #BABABA;
+    padding: 4px;
+    background: #F6F5F4;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all 0.15s ease;
+}
+
+.audio:hover {
+    color: #FFFFFF;
+    background: #2B788B;
+
+}
+
+.main-word {
+    color: #000000 !important;
+}
+
+
+.words-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.words-list::-webkit-scrollbar-track {
+    background: #FFFFFF;
+
+}
+
+.words-list::-webkit-scrollbar-thumb {
+    background: #E0E0E0;
+    border-radius: 17px;
+}
+
+.words-list::-webkit-scrollbar-thumb:hover {
+    background: #b9b9b9;
+}
+
+.heart {
+    color: #945069;
+    font-size: 24px;
+}

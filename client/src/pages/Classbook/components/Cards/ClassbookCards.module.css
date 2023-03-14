@@ -1,0 +1,170 @@
+.title,
+.subtitle {
+    font-family: Montserrat !important;
+    font-weight: 900 !important;
+}
+
+.subtitle {
+    color: #757575 !important;
+}
+
+.text {
+    border-bottom: 1.21942px solid #E0E0E0;
+    color: #000000 !important;
+}
+
+.subtext {
+    /* color: #757575 !important; */
+}
+
+
+.transcript {
+    color: #000000 !important;
+}
+
+.badge {
+    padding: 4px 12px;
+    color: #ffffff !important;
+    height: fit-content !important;
+    border-radius: 4px;
+
+}
+
+.badge-easy {
+    background-color: #639B6D;
+}
+
+.badge-medium {
+    background-color: #639B6D;
+    background: #C4A24C !important;
+}
+
+.badge-hard {
+    background-color: #639B6D;
+    background: #CB5B43 !important;
+}
+
+.rows {
+    max-width: 926px;
+    row-gap: 20px;
+}
+
+.text-box {
+    overflow: auto;
+    max-height: 124px;
+}
+
+.scroll {
+    overflow: hidden;
+
+}
+
+
+
+.text-box::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+.text-box::-webkit-scrollbar-track {
+    background: #F1F1F1;
+}
+
+.text-box::-webkit-scrollbar-thumb {
+    background: #DCDCDC;
+}
+
+.text-box::-webkit-scrollbar-thumb:hover {
+    background: #b9b9b9;
+}
+
+
+.pagination {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.pag-item,
+.pag-item .pagLink {
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pagLink {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    border: 3px solid #5996A5;
+    color: #5996A5 !important;
+}
+
+.pagLink:hover {
+    background-color: #5996A5;
+    color: #FFFFFF !important;
+    border: 3px solid #5996A5;
+
+}
+
+.pagLink.active {
+    background: #2B788B;
+    color: #FFFFFF !important;
+
+}
+
+
+.next-page-link {
+    min-height: 635px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.image-box {
+    flex: 0 0 337px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.next-page-link {
+
+    min-height: 330px;
+}
+
+.audio {
+    background-color: #F6F5F4 !important;
+    border-radius: 4px;
+    padding: 9px;
+    color: #BABABA;
+    transition: all 0.15s ease;
+}
+
+
+.audio:hover {
+    background-color: #2B788B !important;
+    color: #F6F5F4;
+
+}

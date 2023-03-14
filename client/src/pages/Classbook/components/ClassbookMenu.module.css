@@ -1,0 +1,44 @@
+.actions-box {
+    background-color: #fff;
+    border-radius: 14px;
+}
+
+.actions-box .links, .links .textbook-title {
+    text-decoration: none;
+    color: #757575 !important;
+    font-size: 26px !important;
+    transition: all 0.15s ease;
+}
+.actions-box .links.active .textbook-title{
+    color: #000000 !important;
+}
+.actions-box .links .textbook-title:hover{
+    color: #383737 !important;
+}
+.btn-image {
+    position: relative;
+    overflow-y: hidden;
+    border-radius: 14px; 
+    padding: 14px 37px 14px 59px;
+    line-height: 1;
+}
+.btn-image a{
+    text-decoration: none !important;
+    color: unset !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-image:disabled {
+    color: #757575 !important;
+    background: #E0E0E0 !important;
+    border: 3px solid #E0E0E0 !important;
+}
+
+.image{ 
+    position: absolute;
+    max-width: 44px;
+    left: 0;
+}
+    

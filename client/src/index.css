@@ -1,0 +1,395 @@
+@import url(https://fonts.googleapis.com/css?family=Dela+Gothic+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800,900);
+@import url('./assets/fonts/fonticons.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none !important;
+}
+
+a:focus,
+a:active {
+  outline: none !important;
+}
+
+a,
+a::visited {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: #2B788B !important;
+}
+
+a.active_link {
+  color: #2B788B !important;
+
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background:#F6F5F4 !important;
+
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header,
+main,
+footer {
+  flex-shrink: 0;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+button:focus {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Dela Gothic One';
+  font-weight: 400 !important;
+  color: #000000 !important;
+  letter-spacing: -0.04em !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+
+h1 {
+  font-size: 56px !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.04em !important;
+}
+
+h2 {
+  font-size: 48px !important;
+}
+
+h3 {
+  font-size: 32px !important;
+}
+
+h4 {
+  font-size: 26px !important;
+}
+
+.logo {
+  font-family: 'Dela Gothic One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.8609px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.logo:hover {
+  color: #2B788B;
+
+}
+
+.text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: -0.04em;
+  color: #757575;
+  text-decoration: none;
+
+}
+
+.text1 {
+  font-size: 18px;
+}
+
+.text2 {
+  font-size: 16px;
+}
+
+.text3 {
+  font-size: 14px;
+}
+
+.text-label {
+  font-size: 12px;
+}
+
+.icon {
+  font-size: 1.5rem !important;
+}
+.button {
+  font-weight: 700 !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+  transition: all 0.15s ease !important;
+}
+
+.button-login,
+.button-signup {
+  font-size: 14px !important;
+}
+
+.button-signup {
+  padding: 8px 15px !important;
+  border-radius: 12px !important;
+  border: 3px solid #2B788B !important;
+}
+
+@media screen and (max-width: 768px){
+  .button-signup {
+    padding: 8px 10px !important;
+    border-radius: 12px !important;
+    border: 3px solid #2B788B !important;
+  }
+}
+
+.button-blue {
+  background: #2B788B !important;
+  color: #FFFFFF !important;
+  border: 3px solid #2B788B !important;
+
+}
+
+.button-blue:hover {
+  background: #FFFFFF !important;
+  color: #2B788B !important;
+}
+
+.button-rose {
+  background: #F2D4DC !important;
+  color: #945069 !important;
+  border: 3px solid #F2D4DC !important;
+
+}
+
+.button-rose:hover {
+  background: #FFFFFF !important;
+  border: 3px solid #945069 !important;
+
+}
+
+.button-light-blue {
+  background: #C3DCE3 !important;
+  color: #2B788B !important;
+  border-radius: 12px !important;
+  border: 3px solid #C3DCE3 !important;
+
+}
+
+.button-light-blue:hover {
+  background: #2B788B !important;
+  border: 3px solid #2B788B !important;
+  color: #FFFFFF !important;
+}
+.button-card {
+  padding: 9px 17px;
+  color: #ffffff;
+  border-radius: 100px;
+}
+.button-green {
+  background: #639B6D;
+  border: 2px solid #639B6D;
+}
+.button-green:hover {
+  color: #639B6D;
+  background: #ffffff;
+}
+
+.button-green:disabled {
+  background: rgba(99, 155, 109, 0.3);
+  color: #639B6D;
+  border: 2px solid rgba(99, 155, 109, 0.3);
+}
+.button-orange {
+  background: #CB5B43;
+  border: 2px solid #CB5B43;
+
+  color: #ffffff
+}
+.button-orange:hover {
+  color: #CB5B43;
+  background: #ffffff;
+}
+
+.button-main {
+  font-size: 18px !important;
+  padding: 14px 22px !important;
+}
+
+.button-content {
+  font-size: 16px !important;
+  padding: 11px 18px !important;
+  border-radius: 100px !important;
+  
+}
+
+.button-login {
+  font-weight: 700 !important;
+  color: #000000 !important;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
+}
+
+.button-login:hover {
+  text-decoration-line: underline !important;
+  color: #2B788B !important;
+}
+.link-button {
+  padding: 14px 22px !important;
+  border-radius: 100px !important;
+}
+a.dropdown-toggle {
+  padding: 0;
+}
+
+.navbar .navbar-toggler,
+.navbar .navbar-toggler:focus,
+.navbar .navbar-toggler:active,
+.navbar .navbar-toggler-icon:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
+  background-color: #000000;
+  height: 2px !important;
+  width: 25px !important;
+  position: relative;
+  transition: all 0.35s ease-out;
+  border: none !important;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  display: block;
+  background-color: #000000;
+  height: 2px !important;
+  content: "";
+  position: relative;
+  transition: all 0.15s ease-out;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 6px;
+}
+
+
+.btn-close:focus {
+  box-shadow: none !important;
+}
+
+.navbar-nav .nav-link {
+  color: #757575 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #2B788B !important;
+
+}
+.card-body {
+  padding: 30px !important;
+}
+
+.card {
+  box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
+  border-radius: 14px !important;
+  overflow: hidden !important;
+}
+
+.dropdown-item { 
+  background-color: #ffffff !important; 
+}
+
+.w100 {
+  width: 100%;
+}
+
+.spinner {
+  color: #2B788B;
+
+}
+
+.text-error {
+  color: rgb(250, 120, 120) !important;
+}
+
+.transition {
+  transition: all 0.5s linear;
+}

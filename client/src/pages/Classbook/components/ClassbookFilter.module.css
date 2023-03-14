@@ -1,0 +1,68 @@
+.filter {
+    max-width: 830px;
+    padding: 40px 0;
+}
+@media screen and (max-width: 768px) {
+    .filter {
+        max-width: 400px;
+    }
+}
+.links {
+    text-decoration: none !important;
+    padding-bottom: 14px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid transparent;
+
+}
+.links.active {
+    border-bottom: 2px solid #000000;
+}
+.links h4 {
+    color: #757575 !important;
+}
+
+.easy,
+.medium,
+.hard {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.easy span,
+.medium span,
+.hard span {
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.easy span {
+    background: rgba(99, 155, 109, 0.3) !important;
+    color: #639B6D !important;
+}
+
+.medium span {
+    color: #C4A24C !important;
+    background: rgba(196, 162, 76, 0.3) !important;
+}
+
+.hard span {
+    color: #CB5B43 !important;
+    background: rgba(203, 91, 67, 0.3) !important;
+}
+.links.active h4 {
+    color: #000000 !important;
+}
+.easy.active span {
+    background: #639B6D !important;
+    color: #F6F5F4 !important;
+}
+
+.medium.active span {
+    color: #F6F5F4 !important;
+    background: #C4A24C !important;
+}
+
+.hard.active span {
+    color: #F6F5F4 !important;
+    background: #CB5B43 !important;
+}

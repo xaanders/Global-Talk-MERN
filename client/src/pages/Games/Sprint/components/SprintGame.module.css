@@ -1,0 +1,145 @@
+.game {
+    padding: 50px 0;
+}
+.words .circle {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.words .timing {
+    width: 500px;
+    height: 500px;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+@media screen and (max-width: 575px) {
+    .words .circle {
+        width: 300px;
+        height: 300px;
+
+    }
+
+    .words .timing {
+        width: 300px;
+        height: 300px;
+
+    }
+
+}
+@media screen and (max-width: 380px) {
+    .words .circle {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .words .timing {
+        width: 200px;
+        height: 200px;
+
+    }
+
+}
+.ring {
+    transition: all 1s linear;
+}
+.ring.active {
+    transition: none;
+}
+.content {
+    position: absolute;
+}
+@media screen and (max-width: 380px) {
+    .words .content {
+        top: 10px;
+        gap: 0.7rem !important;
+    }
+}
+
+.points div {
+    font-family: 'Dela Gothic One';
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.content .indicators {
+    display: flex;
+    gap: 0.5rem
+}
+
+.content .indicators span {
+    color: #C3DCE3;
+    font-size: 26px;
+}
+
+.content .indicators span.active {
+    color: #2B788B;
+}
+
+.content h2.translation {
+    color: #2B788B !important;
+}
+
+button.answers {
+    padding: 14px 22px;
+    border-radius: 100px !important;
+    margin: 0 !important;
+}
+
+
+@media screen and (max-width: 575px) {
+    .content .indicators span {
+        font-size: 17px;
+    }
+
+    .content h2 {
+        font-size: 2rem !important;
+    }
+
+    .points div {
+        font-size: 27px !important;
+    }
+
+    button.answers {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .content .indicators span {
+        font-size: 16px;
+    }
+
+    .content h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .points div {
+        font-size: 24px !important;
+    }
+
+    button.answers {
+        padding: 6px 17px;
+        font-size: 14px;
+    }
+    .activities {
+        margin-top: 40px;
+    }
+
+}
+
+.word {
+    font-family: Montserrat;
+    font-weight: 800 !important;
+    font-size: 48px;
+}

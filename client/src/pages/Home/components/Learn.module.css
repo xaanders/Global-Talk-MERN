@@ -1,0 +1,95 @@
+.learn {
+    padding: 77px 0;
+    background-color: #ffffff;
+}
+
+.increase {
+    padding-top: 26px;
+
+}
+
+.watch {
+    padding: 95px 0;
+    background-color: #ffffff;
+
+}
+
+.content {
+    max-width: 474px;
+}
+
+.title-text {
+    max-width: 396px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .content {
+        max-width: unset;
+        text-align: center;
+    }
+
+    .title-text {
+        max-width: unset;
+    }
+
+    .learn {
+        max-width: unset;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .actions {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 2rem !important;
+    }
+}
+
+.play-links-audio,
+.play-links-sprint {
+    width: 172px;
+    height: 112px;
+    position: relative;
+
+}
+
+
+.play-links-audio div,
+.play-links-sprint div {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.play-links-audio img,
+.play-links-sprint img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.play-links-audio img {
+    top: -45%;
+    left: 15%
+}
+
+.play-links-sprint img {
+    top: -35%;
+    left: 10%
+}
+.actions a,
+.play-links-sprint a,
+.play-links-audio a {
+    color: unset !important;
+    text-decoration: none !important;
+}
