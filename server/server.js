@@ -7,15 +7,15 @@ const words = require("./router/words");
 const profiles = require("./router/profiles");
 const cors = require("cors");
 
+require('dotenv').config();
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: process.env.FRONTEND_URL,
     credentials: true
 }))
 // Bodyparser middleware
 app.use(express.json());
 app.use(express.urlencoded());
 
-require('dotenv').config();
 const uri = process.env.ATLAS_URI;
 mongoose.set('strictQuery', true);
 mongoose.connect(uri, { useNewUrlParser: true })
