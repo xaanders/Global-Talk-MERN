@@ -4,11 +4,13 @@ import jwt_decode from "jwt-decode";
 import { userActions } from "../reducers/user-slice";
 import { errorActions } from "../reducers/error-slice";
 
+require('dotenv').config();
+const uri = process.env.BACKEND_URL;
 // Register User
 export const registerUser = (userData, navigate, dispatch) => {
     dispatch(userActions.userLoading(true));
     axios
-        .post("https://global-talk.herokuapp.com/router/users/register", userData)
+        .post(`${uri}/router/users/register`, userData)
         .then(res => navigate("/login")) // re-direct to login on successful register
         .catch(err => {
             if (!err.response) {
@@ -25,7 +27,7 @@ export const registerUser = (userData, navigate, dispatch) => {
 export const loginUser = (userData, navigate, dispatch) => {
     dispatch(userActions.userLoading(true));
     axios
-        .post("https://global-talk.herokuapp.com/router/users/login", userData)
+        .post(`${uri}/router/users/login`, userData)
         .then(res => {
             // Save to localStorage
             // Set token to localStorage
@@ -53,7 +55,7 @@ export const loginUser = (userData, navigate, dispatch) => {
 };
 export const setUserProfile = (profileData, dispatch) => {
     axios
-        .patch("https://global-talk.herokuapp.com/router/profiles/", profileData)
+        .patch(`${uri}/router/profiles/`, profileData)
         .then(res => {
             dispatch(userActions.setUserProfile(res.data));
         })
@@ -68,7 +70,7 @@ export const setUserProfile = (profileData, dispatch) => {
 };
 export const getUserProfile = (profileId, dispatch) => {
     axios
-        .post("https://global-talk.herokuapp.com/router/profiles/", profileId)
+        .post(`${uri}/router/profiles/`, profileId)
         .then(res => {
             if (res.data) {
                 dispatch(userActions.setUserProfile(res.data));
