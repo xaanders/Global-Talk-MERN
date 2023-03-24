@@ -1,15 +1,15 @@
 .user-statistics {
-    padding: 100px 0;
+    padding: 6.25rem 0;
 
 }
 @media screen and (max-width: 768px) {
     .user-statistics {
-        padding: 50px 0;
+        padding: 3.12rem 0;
     }
 }
 .statistics {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 
@@ -17,11 +17,11 @@
 .title {
     font-family: 'Dela Gothic One';
     font-weight: 400;
-    font-size: 26px !important;
+    font-size: 1.625rem !important;
     line-height: 100%;
     letter-spacing: -0.04em;
     color: #757575 !important;
-    padding-bottom: 12px;
+    padding-bottom: 0.75rem;
     text-decoration: none !important;
     border-bottom: 3px solid transparent;
 
@@ -40,12 +40,12 @@
     flex: 1 1 37%;
     background: #FFFFFF;
     box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
-    border-radius: 14px;
-    padding: 40px;
+    border-radius: 0.875rem;
+    padding: 2.5rem;
 }
 @media screen and (max-width: 768px) {
     .info {
-        padding: 15px;
+        padding: 0.93rem;
     }
   
 }
@@ -53,7 +53,7 @@
     font-family: 'Dela Gothic One';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 100%;
     letter-spacing: -0.02em;
     color: #000000;
@@ -72,11 +72,11 @@
 }
 
 .badge {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 140%;
     letter-spacing: -0.04em;
     color: #2B788B;
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
     background-color: #C3DCE3;
     border-radius: 6px;
 
@@ -93,7 +93,7 @@
 .chart {
     flex: 1 1 62%;
     display: flex;
-    padding: 30px 45px;
+    padding: 1.875rem 2.81rem;
     align-items: center;
     background-color: #ffffff;
 }
@@ -107,17 +107,17 @@
 
 @media screen and (max-width: 768px) {
     .chart {
-        padding: 10px 15px;
+        padding: 0.625rem 0.93rem;
     }
   
 }
 
 .chart path {
-    transform: translate(0, -30px);
+    transform: translate(0, -1.875rem);
 }
 
 .labels {
-    bottom: -20px;
+    bottom: -1.25rem;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -127,6 +127,6 @@
   }
   
   .label {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #333;
   }

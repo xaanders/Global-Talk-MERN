@@ -1,6 +1,6 @@
 .e-course {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 100%;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -35,7 +35,7 @@
 .statistics-item {
     font-family: 'Dela Gothic One';
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2rem;
     letter-spacing: -0.04em;
     display: flex;
 }
@@ -64,7 +64,7 @@
 .statistics-name {
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 140%;
     letter-spacing: -0.04em;
     color: #585858;

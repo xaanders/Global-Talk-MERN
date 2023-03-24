@@ -13,7 +13,6 @@ function Finished({ title, answers, message, handler, points, hearts }) {
     const id = useSelector(state => state.user.userInfo && state.user.userInfo.profile._id);
     const dispatch = useDispatch();
     const [days] = useState({ ...profile.dayStatistics });
-    console.log(profile);
     useEffect(() => {
         if (id) {
 

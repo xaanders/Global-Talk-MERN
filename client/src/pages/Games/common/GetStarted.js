@@ -61,12 +61,12 @@ function GetStarted({ img, title, badge, descr, handler, words }) {
                     <Image className={`${classes.image} mx-auto`} src={img} />
                     <div className={`${classes.info}`}>
                         <div className="mb-3 mb-sm-5 d-flex d-md-block flex-column align-items-center justify-content-center">
-                            <h3 className={`${classes['getstarted-title']} mb-3 d-flex gap-2`}>{title} <span className={`align-self-start ${classes.badge}`}>{badge}</span></h3>
+                            <h3 className={`${classes.title} mb-3 d-flex gap-2`}>{title} <span className={`align-self-start ${classes.badge}`}>{badge}</span></h3>
                             <p className={`text text2 ${classes.text}`}>{descr}</p>
                         </div>
                         <form className={`${classes.actions}`} onSubmit={submitHandler} >
                             <label htmlFor='ul' className={`d-block text text3 mb-2`}>Choose a level:</label>
-                            <ul className={`d-flex gap-4 mb-4 ps-0 flex-wrap flex-sm-nowrap justify-content-md-start justify-content-center  ${classes.list}`}>
+                            <ul className={`d-flex gap-4 mb-4 ps-0 mx-auto flex-wrap flex-sm-nowrap justify-content-md-start justify-content-center  ${classes.list}`}>
                                 {levels.map(item => (
                                     <RadioInput item={item} key={item.level} inputHandler={inputHandler} />
                                 ))}

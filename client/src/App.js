@@ -4,23 +4,25 @@ import 'react-bootstrap';
 import jwt_decode from "jwt-decode";
 
 
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
 import Layout from './common/layout/Layout';
 import HomePage from './pages/Home';
 import Statistics from './pages/Statistics';
-import Classbook from './pages/Classbook';
 import Sprint from './pages/Games/Sprint';
 import AudioCall from './pages/Games/AudioCall';
 import SignUp from './pages/Auth/SignUp';
 import Login from './pages/Auth/Login';
 
+
 import { getUserProfile, logoutUser } from './store/actions/userActions';
 import { errorActions } from "./store/reducers/error-slice";
 import { userActions } from './store/reducers/user-slice';
 import setAuthToken from "./utils/setAuthToken";
+import { Spinner } from 'react-bootstrap';
 
+const Classbook = lazy(() => import('./pages/Classbook'))
 
 function App() {
   const location = useLocation();
@@ -40,7 +42,7 @@ function App() {
         // Logout user
         logoutUser(dispatch);
       } else {
-        getUserProfile({_id: decoded.profile}, dispatch);
+        getUserProfile({ _id: decoded.profile }, dispatch);
       }
     }
   }, [location.pathname, dispatch, storageToken])
@@ -65,12 +67,12 @@ function App() {
         <Route path="/statistics" element={<Statistics />}>
           <Route path="day" element={<Statistics />} />
           <Route path="alltime" element={<Statistics />} />
-          <Route path="/statistics/*" element={<Navigate to="day" replace/>}/>
+          <Route path="/statistics/*" element={<Navigate to="day" replace />} />
         </Route>
-        
-        <Route path="/textbook" element={<Classbook />}>
-          <Route path=":level" element={<Classbook />}>
-            <Route path=":pageNumber" element={<Classbook />} />
+
+        <Route path="/textbook" element={<Suspense fallback={<Spinner animation="border" className="spinner" role="status" />}><Classbook /></Suspense>}>
+          <Route path=":level" element={<Suspense fallback={<Spinner animation="border" className="spinner" role="status" />}><Classbook /></Suspense>}>
+            <Route path=":pageNumber" element={<Suspense fallback={<Spinner animation="border" className="spinner" role="status" />}><Classbook /></Suspense>} />
           </Route>
         </Route>
 

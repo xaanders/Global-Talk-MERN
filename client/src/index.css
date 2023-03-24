@@ -54,7 +54,7 @@ body {
   height: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 16px;
+  font-size: 1rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -123,28 +123,28 @@ h6 {
 }
 
 h1 {
-  font-size: 56px !important;
+  font-size: 3.5rem !important;
   line-height: 1.2 !important;
   letter-spacing: -0.04em !important;
 }
 
 h2 {
-  font-size: 48px !important;
+  font-size: 3rem !important;
 }
 
 h3 {
-  font-size: 32px !important;
+  font-size: 2rem !important;
 }
 
 h4 {
-  font-size: 26px !important;
+  font-size: 1.625rem !important;
 }
 
 .logo {
   font-family: 'Dela Gothic One';
   font-style: normal;
   font-weight: 400;
-  font-size: 20.8609px;
+  font-size: 1.303rem;
   line-height: 100%;
   letter-spacing: -0.02em;
   color: #000000;
@@ -169,19 +169,19 @@ h4 {
 }
 
 .text1 {
-  font-size: 18px;
+  font-size: 1.15rem;
 }
 
 .text2 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .text3 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .text-label {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .icon {
@@ -189,26 +189,26 @@ h4 {
 }
 .button {
   font-weight: 700 !important;
-  gap: 10px !important;
+  gap: 0.625rem !important;
   text-decoration: none !important;
   transition: all 0.15s ease !important;
 }
 
 .button-login,
 .button-signup {
-  font-size: 14px !important;
+  font-size: 0.875rem !important;
 }
 
 .button-signup {
-  padding: 8px 15px !important;
-  border-radius: 12px !important;
+  padding: 0.5rem 0.93rem !important;
+  border-radius: 0.75rem !important;
   border: 3px solid #2B788B !important;
 }
 
 @media screen and (max-width: 768px){
   .button-signup {
-    padding: 8px 10px !important;
-    border-radius: 12px !important;
+    padding: 0.5rem 0.625rem !important;
+    border-radius: 0.75rem !important;
     border: 3px solid #2B788B !important;
   }
 }
@@ -241,7 +241,7 @@ h4 {
 .button-light-blue {
   background: #C3DCE3 !important;
   color: #2B788B !important;
-  border-radius: 12px !important;
+  border-radius: 0.75rem !important;
   border: 3px solid #C3DCE3 !important;
 
 }
@@ -252,7 +252,7 @@ h4 {
   color: #FFFFFF !important;
 }
 .button-card {
-  padding: 9px 17px;
+  padding: 0.562rem 1.1rem;
   color: #ffffff;
   border-radius: 100px;
 }
@@ -282,13 +282,13 @@ h4 {
 }
 
 .button-main {
-  font-size: 18px !important;
-  padding: 14px 22px !important;
+  font-size: 1.15rem !important;
+  padding: 0.875rem 1.375rem !important;
 }
 
 .button-content {
-  font-size: 16px !important;
-  padding: 11px 18px !important;
+  font-size: 1rem !important;
+  padding: 0.69rem 1.15rem !important;
   border-radius: 100px !important;
   
 }
@@ -306,7 +306,7 @@ h4 {
   color: #2B788B !important;
 }
 .link-button {
-  padding: 14px 22px !important;
+  padding: 0.875rem 1.375rem !important;
   border-radius: 100px !important;
 }
 a.dropdown-toggle {
@@ -326,7 +326,7 @@ a.dropdown-toggle {
   background-image: none !important;
   background-color: #000000;
   height: 2px !important;
-  width: 25px !important;
+  width: 1.562rem !important;
   position: relative;
   transition: all 0.35s ease-out;
   border: none !important;
@@ -343,7 +343,7 @@ a.dropdown-toggle {
 }
 
 .navbar-toggler-icon::before {
-  top: -8px;
+  top: -0.5rem;
 }
 
 .navbar-toggler-icon::after {
@@ -364,12 +364,12 @@ a.dropdown-toggle {
 
 }
 .card-body {
-  padding: 30px !important;
+  padding: 1.875rem !important;
 }
 
 .card {
   box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
-  border-radius: 14px !important;
+  border-radius: 0.875rem !important;
   overflow: hidden !important;
 }
 

@@ -1,5 +1,5 @@
 .game {
-    margin: 100px 0;
+    margin: 6.25rem 0;
 }
 
 .game .answer {
@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
 }
 
 .answer .audio-play {
@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 4px solid #2B788B;
+    border: 0.25rem solid #2B788B;
     border-radius: 100px;
     opacity: 1;
     transition: all 0.3s linear;
@@ -29,7 +29,7 @@
 }
 
 .answer .audio-play span.icon {
-    font-size: 80px !important;
+    font-size: 5rem !important;
     font-weight: normal !important;
 }
 
@@ -64,7 +64,7 @@
 .words button {
     border: 3px solid #BABABA;
     border-radius: 100px;
-    padding: 14px;
+    padding: 0.875rem;
     line-height: 1 !important;
     letter-spacing: -0.04em;
     color: #BABABA !important;
@@ -122,7 +122,7 @@
     background-color: #ffffff;
     box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
     border-radius: 88px;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     width: max-content;
     justify-self: center;
 }
@@ -133,7 +133,7 @@
 
 .keys {
     background-color: #fff;
-    font-size: 16px !important;
+    font-size: 1rem !important;
     padding: 3px;
     border-radius: 5px;
 }

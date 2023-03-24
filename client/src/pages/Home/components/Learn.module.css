@@ -1,17 +1,16 @@
 .learn {
-    padding: 77px 0;
+    padding: 4.81rem 0;
     background-color: #ffffff;
 }
 
 .increase {
-    padding-top: 26px;
+    padding-top: 1.625rem;
 
 }
 
 .watch {
-    padding: 95px 0;
+    padding: 5.9rem 0;
     background-color: #ffffff;
-
 }
 
 .content {
@@ -52,12 +51,27 @@
     .title {
         font-size: 2rem !important;
     }
-}
 
+    .watch {
+        padding: 4.37rem 0;
+    }
+
+}
+@media screen and (max-width: 468px) {
+    .learn {
+        padding: 2.5rem 0;
+        background-color: #ffffff;
+    }
+    
+    .watch {
+        padding: 2.5rem 0;
+    }
+
+}
 .play-links-audio,
 .play-links-sprint {
     width: 172px;
-    height: 112px;
+    height: 10.75rem;
     position: relative;
 
 }
@@ -87,6 +101,7 @@
     top: -35%;
     left: 10%
 }
+
 .actions a,
 .play-links-sprint a,
 .play-links-audio a {

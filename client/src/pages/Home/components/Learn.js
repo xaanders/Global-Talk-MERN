@@ -6,7 +6,7 @@ function Learn() {
     return (
         <section className={classes.learn}>
             <Container>
-                <div className="d-flex justify-content-between align-items-center gap-5 flex-column-reverse flex-lg-row">
+                <div className="d-flex justify-content-between align-items-center gap-3 gap-md-5 flex-column-reverse flex-lg-row">
                     <div>
                         <Image fluid src="assets/images/home/home2.jpg" alt="learn with us" />
                     </div>

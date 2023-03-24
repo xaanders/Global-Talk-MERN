@@ -40,7 +40,7 @@ function AudioCall() {
     const [words, setWords] = useState([]);
     const [state, dispatch] = useReducer(gameReducer, initialState);
     useEffect(() => {
-        axios.get('http://localhost:5000/router/words/')
+        axios.get(`${process.env.REACT_APP_BACKEND_URL}/router/words/`)
             .then(response => {
                 setWords(response.data);
             })

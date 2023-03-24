@@ -1,12 +1,12 @@
 .actions-box {
     background-color: #fff;
-    border-radius: 14px;
+    border-radius: 0.875rem;
 }
 
 .actions-box .links, .links .textbook-title {
     text-decoration: none;
     color: #757575 !important;
-    font-size: 26px !important;
+    font-size: 1.625rem !important;
     transition: all 0.15s ease;
 }
 .actions-box .links.active .textbook-title{
@@ -18,8 +18,8 @@
 .btn-image {
     position: relative;
     overflow-y: hidden;
-    border-radius: 14px; 
-    padding: 14px 37px 14px 59px;
+    border-radius: 0.875rem; 
+    padding: 0.875rem 2.3rem 0.875rem 3.68rem;
     line-height: 1;
 }
 .btn-image a{

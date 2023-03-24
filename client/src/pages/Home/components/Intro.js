@@ -32,7 +32,7 @@ function Intro() {
 
                         <div className={`${classes.actions} d-flex gap-2`}>
                             {user ?
-                                <Link className="button button-light-blue" style={{padding: '15px'}} to={Math.round(Math.random() * 2) === 1 ? '/sprint' : '/audiocall'} variant="link">Start learning!</Link>
+                                <Link className="button button-light-blue" style={{padding: '0.93rem'}} to={Math.round(Math.random() * 2) === 1 ? '/sprint' : '/audiocall'} variant="link">Start learning!</Link>
                                 : <>
                                     <Link className="button button-login d-flex align-items-center" to="/signup" variant="link">Sign In →</Link>
                                     <Link className="button button-light-blue button-main" to="/login" variant="link">Login →</Link>

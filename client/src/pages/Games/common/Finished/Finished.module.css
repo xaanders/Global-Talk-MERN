@@ -1,11 +1,11 @@
 .total-box {
-    margin: 100px 0;
+    margin: 6.25rem 0;
 }
 
 
 @media screen and (max-height: 768px) {
     .total-box {
-        margin: 40px 0;
+        margin: 2.5rem 0;
     }
 }
 
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 2.5rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -23,7 +23,7 @@
     .words-box {
         width: 100%;
         height: unset !important;
-        padding: 20px;
+        padding: 1.25rem;
     }
 }
 
@@ -31,12 +31,12 @@
 .total {
     background-color: #fff;
     box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
-    border-radius: 14px;
+    border-radius: 0.875rem;
 }
 
 .circle {
-    width: 114px;
-    height: 114px;
+    width: 10.875rem;
+    height: 10.875rem;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
 }
@@ -44,7 +44,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 1.562rem;
 }
 @media screen and (max-width: 300px) {
     .circles {
@@ -74,7 +74,7 @@
 }
 
 .actions {
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .label {
@@ -96,30 +96,30 @@
 
 .words-box {
     background-color: #fff;
-    gap: 20px;
+    gap: 1.25rem;
     box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
-    border-radius: 14px;
+    border-radius: 0.875rem;
 }
 
 .words-list {
-    height: 256px;
+    height: 23.5rem;
     overflow: auto;
     display: flex;
     flex-direction: column;
-    gap: 14px
+    gap: 0.875rem
 }
 @media screen and (max-width: 468px) {
     .knowledge {
         width: 100%;
     }
     .iknow .title, .idknow .title {
-        font-size: 24px !important;
+        font-size: 1.5rem !important;
     }
     .content {
         text-align: center;
     }
     .content .main-title {
-        font-size: 24px !important;
+        font-size: 1.5rem !important;
     } 
 }
 
@@ -127,16 +127,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
     margin-bottom: 2rem !important;
 }
 
 .badge {
     font-family: 'Montserrat';
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 140%;
     letter-spacing: -0.04em;
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
     font-weight: 600;
     border-radius: 6px;
 }
@@ -153,11 +153,11 @@
 
 .audio {
     color: #BABABA;
-    padding: 4px;
+    padding: 0.25rem;
     background: #F6F5F4;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 1.5rem;
     transition: all 0.15s ease;
 }
 
@@ -183,7 +183,7 @@
 
 .words-list::-webkit-scrollbar-thumb {
     background: #E0E0E0;
-    border-radius: 17px;
+    border-radius: 1.1rem;
 }
 
 .words-list::-webkit-scrollbar-thumb:hover {
@@ -192,5 +192,5 @@
 
 .heart {
     color: #945069;
-    font-size: 24px;
+    font-size: 1.5rem;
 }

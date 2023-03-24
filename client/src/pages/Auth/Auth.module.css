@@ -1,23 +1,23 @@
 .form-box {
-    padding: 100px 0;
+    padding: 6.25rem 0;
 }
 
 .form {
     max-width: 500px;
     background-color: #fff;
-    padding: 40px;
-    border-radius: 14px;
+    padding: 2.5rem;
+    border-radius: 0.875rem;
     flex-basis: 70%;
     box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
 }
 
 @media screen and (max-width: 600px) {
     .form-box {
-        padding: 40px 0;
+        padding: 2.5rem 0;
     }
 
     .form {
-        padding: 20px;
+        padding: 1.25rem;
 
         flex-basis: unset;
     }

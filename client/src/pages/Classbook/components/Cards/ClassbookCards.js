@@ -45,7 +45,7 @@ function ClassbookCards({ words = [], wordHandler, textbook = true }) {
 
                     <Row className={`${classes.rows} justify-content-center align-items-center`}>
                         {currentCards.length > 0 && currentCards.map((item, i) => {
-                            return <Col xs='12' key={1 + i}>
+                            return <Col className={classes.columns} xs='12' key={1 + i}>
                                 <ClassbookItem item={item} wordHandler={wordHandler} textbook={textbook} />
                             </Col>
                         })}

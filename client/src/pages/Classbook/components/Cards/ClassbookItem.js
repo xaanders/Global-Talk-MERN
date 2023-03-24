@@ -17,11 +17,11 @@ function ClassbookItem({item, wordHandler, textbook}) {
                 <Image src={`${item.image}`} />
             </div>
 
-            <Card.Body>
-                <div className="mb-3 d-flex gap-2 align-items-center">
+            <Card.Body className={classes.box}>
+                <div className={`${classes['translation-word-box']} mb-3 d-flex gap-2 align-items-center flex-wrap`}>
                     <h4 className={`mb-1 ${classes.title}`}>{item.word} /</h4>
                     <h4 className={classes.subtitle}>{item.translation}</h4>
-                    <div className="ms-auto">
+                    <div className={`${classes['audio-btn']}`}>
                         <button className={`${classes.audio} _icon-audio`} onClick={audioPlay}>
                         </button>
                         <audio src={item.audio} ref={audioRef}/>

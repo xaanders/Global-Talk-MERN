@@ -1,38 +1,50 @@
 .getstarted {
-    padding: 100px 0;
+    padding: 6.25rem 0;
 }
 
 .message {
     background-color: #fff;
-    padding: 40px;
+    padding: 2.5rem;
     box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
-    border-radius: 14px;
+    border-radius: 0.875rem;
 
 }
 
-.getstarted-title {
+@media screen and (max-width: 480px) {
+
+    .message {
+        background-color: #fff;
+        padding: 0.93rem;
+    }
+}
+
+.title {
     max-width: 490px;
 }
 
-.getstarted-title .badge {
+
+.title .badge {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 140%;
     color: #2B788B;
     background-color: #fff;
     background: #C3DCE3;
     border-radius: 6px;
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
 }
 
 .btn-login {
-    font-size: 16px !important;
+    font-size: 1rem !important;
 }
 
 @media screen and (max-width: 768px) {
+    .getstarted {
+        padding: 3.75rem 0;
 
+    }
     .getstarted .image {
         max-width: 300px !important;
     }
@@ -40,13 +52,13 @@
 
 @media screen and (max-width: 480px) {
     .getstarted {
-        padding: 100px 0;
+        padding: 2.5rem 0;
         text-align: center;
     }
 
-    .getstarted-title {
-        max-width: 231px;
-        font-size: 24px !important;
+    .title {
+        max-width: 21.93rem;
+        font-size: 1.5rem !important;
     }
 
     .getstarted .image {
@@ -60,7 +72,11 @@
     justify-content: center;
     position: relative;
 }
-
+@media screen and (max-width: 468px) {
+    .list {
+        max-width: 20.625rem;
+    }
+}
 .list-item .radio-item {
     position: absolute;
     top: 0;
@@ -87,7 +103,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
 
 }
 
@@ -160,5 +176,5 @@
     height: 50px;
     margin: 0;
     padding: 5px;
-    
+
 }

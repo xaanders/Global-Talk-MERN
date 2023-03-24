@@ -1,12 +1,12 @@
 .no-statistics {
-    padding: 100px 0;
+    padding: 6.25rem 0;
 }
 
 .message {
     background-color: #fff;
-    padding: 40px;
+    padding: 2.5rem;
     box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
-    border-radius: 14px;
+    border-radius: 0.875rem;
 
 }
 
@@ -15,7 +15,7 @@
 }
 
 .btn-login {
-    font-size: 16px !important;
+    font-size: 1rem !important;
 }
 @media screen and (max-width: 768px) {
 
@@ -25,12 +25,12 @@
 }
 @media screen and (max-width: 480px) {
     .no-statistics {
-        padding: 100px 0;
+        padding: 2.5rem 0;
         text-align: center;
     }
     .no-statistics-title {
-        max-width: 231px;
-        font-size: 24px !important;
+        max-width: 21.93rem;
+        font-size: 1.5rem !important;
     }
     .no-statistics .image{
         max-width: 60px !important;

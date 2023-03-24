@@ -9,7 +9,7 @@ const cors = require("cors");
 
 require('dotenv').config();
 app.use(cors({
-    origin: [process.env.FRONTEND_URL, "https://localhost:5000"],
+    origin: [process.env.FRONTEND_URL, "http://localhost:3000"],
     credentials: true
 }))
 // Bodyparser middleware

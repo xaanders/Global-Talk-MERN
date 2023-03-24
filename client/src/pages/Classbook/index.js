@@ -5,16 +5,15 @@ import ClassbookFilter from './components/ClassbookFilter'
 import ClassbookMenu from './components/ClassbookMenu'
 import Dictionary from './components/Dictionary'
 import Textbook from './components/Textbook'
-
+ 
 function Classbook() {
   const location = useLocation();
   const [cards, setCards] = useState([]);
-
+ 
   useEffect(() => {
-    axios.get('http://localhost:5000/router/words/')
+    axios.get(`${process.env.REACT_APP_BACKEND_URL}/router/words/`)
       .then(response => {
         setCards(response.data);
-        console.log(response);
       })
       .catch(err => console.log(err));
   }, [setCards]);
