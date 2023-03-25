@@ -54,14 +54,18 @@ body {
   height: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 1rem;
+  font-size: 16px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background:#F6F5F4 !important;
 
 }
-
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px !important;
+  }
+}
 #root {
   display: flex;
   flex-direction: column;

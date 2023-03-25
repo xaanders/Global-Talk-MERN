@@ -41,7 +41,7 @@ function ClassbookFilter() {
     return (
         <section>
             <Container>
-                <div className={`d-flex flex-wrap justify-content-between align-items-center mx-auto ${classes.filter}`}>
+                <div className={`d-flex flex-wrap justify-content-center gap-2 gap-sm-4 align-items-center mx-auto ${classes.filter}`}>
                     {filters.map(item => {
                         return <Link
                             to={`${item.level.toLowerCase()}`}
