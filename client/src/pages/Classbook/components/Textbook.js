@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setUserProfile } from '../../../store/actions/userActions';
 import { userActions } from '../../../store/reducers/user-slice';
 import NoCards from './Cards/NoCards';
+import { Spinner } from 'react-bootstrap';
 
 function Textbook({ words }) {
     const id = useSelector(state => state.user.userInfo && state.user.userInfo.profile._id);
@@ -24,7 +25,7 @@ function Textbook({ words }) {
     
     return (
         <>
-            {words.length === 0 ? <NoCards btn={false} message="There are no words in this section... Maybe something went wrong. Try again later." /> :
+            {words.length === 0 ? <Spinner animation="border" className="spinner" role="status" style={{ width: '100px', height: '100px' }} /> :
                 <ClassbookCards words={words} wordHandler={addWordToDictionary} />}
         </>
     )

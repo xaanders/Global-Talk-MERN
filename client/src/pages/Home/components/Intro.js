@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import classes from './Intro.module.css'
 
 
-const inspiration = ["The more words you know, the more ideas you can express.",
+const inspirations = ["The more words you know, the more ideas you can express.",
     "Learning new words can be challenging, but the reward of being able to communicate more effectively is worth it.",
     "Every new word you learn is a step forward in your journey to becoming fluent in Ukrainian.",
     "Learning a new language is like unlocking a new world, and every new word you learn is like discovering a new treasure.",
@@ -28,7 +28,7 @@ function Intro() {
                         <div className={classes['e-course']}>E-COURSE PLATFORM</div>
                         <h1 className={classes['main-title']}>Learning ukrainian language online,
                             made easy.</h1>
-                        <p className={`${classes['main-text']} text text-2`}>{user ? inspiration[Math.round(Math.random() * inspiration.length)] : "Learning Ukrainian doesn't have to be a chore. With our website, you'll have fun while you learn. Join our community of learners today and start mastering Ukrainian in a playful way!"}</p>
+                        <p className={`${classes['main-text']} text text-2`}>{user ? inspirations[Math.round(Math.random() * inspirations.length)] : "Learning Ukrainian doesn't have to be a chore. With our website, you'll have fun while you learn. Join our community of learners today and start mastering Ukrainian in a playful way!"}</p>
 
                         <div className={`${classes.actions} d-flex gap-2`}>
                             {user ?
