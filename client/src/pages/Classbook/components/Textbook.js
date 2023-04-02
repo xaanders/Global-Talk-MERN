@@ -10,7 +10,7 @@ function Textbook({ words }) {
     const id = useSelector(state => state.user.userInfo && state.user.userInfo.profile._id);
     const dictionary = useSelector(state => state.user.userInfo.profile.dictionary);
     const dispatch = useDispatch();
-    
+
     const addWordToDictionary = (word) => {
         if (id) {
             const newProfile = {
@@ -22,10 +22,13 @@ function Textbook({ words }) {
             dispatch(userActions.setDictionary(word.translation));
         }
     }
-    
+
     return (
         <>
-            {words.length === 0 ? <Spinner animation="border" className="spinner" role="status" style={{ width: '100px', height: '100px' }} /> :
+            {words.length === 0 ?
+                <div className="d-flex justify-content-center my-5">
+                    <Spinner animation="border" className="spinner" role="status" style={{ width: '100px', height: '100px' }} />
+                </div> :
                 <ClassbookCards words={words} wordHandler={addWordToDictionary} />}
         </>
     )
