@@ -2,9 +2,10 @@ import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap';
 import jwt_decode from "jwt-decode";
+import axios from 'axios'
 
 
-import { lazy, Suspense, useEffect } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import Layout from './common/layout/Layout';
@@ -20,13 +21,14 @@ import { getUserProfile, logoutUser } from './store/actions/userActions';
 import { errorActions } from "./store/reducers/error-slice";
 import { userActions } from './store/reducers/user-slice';
 import setAuthToken from "./utils/setAuthToken";
-import { Spinner } from 'react-bootstrap';
+import CustomSpinner from './common/CustomSpinner';
 
 const Classbook = lazy(() => import('./pages/Classbook'))
 
 function App() {
   const location = useLocation();
   const dispatch = useDispatch();
+  const [cards, setCards] = useState([]);
   const storageToken = localStorage.getItem('jwtToken');
   useEffect(() => {
     dispatch(errorActions.getErrors({}));
@@ -58,6 +60,14 @@ function App() {
     }
   }, [dispatch, storageToken])
 
+ 
+  useEffect(() => {
+    axios.get(`${process.env.REACT_APP_BACKEND_URL}/router/words/`)
+      .then(response => {
+        setCards(response.data);
+      })
+      .catch(err => console.log(err));
+  }, [setCards]);
 
   return (
     <Layout>
@@ -70,15 +80,15 @@ function App() {
           <Route path="/statistics/*" element={<Navigate to="day" replace />} />
         </Route>
 
-        <Route path="/textbook" element={<Suspense fallback={<Spinner animation="border" className="spinner" role="status" />}><Classbook /></Suspense>}>
-          <Route path=":level" element={<Suspense fallback={<Spinner animation="border" className="spinner" role="status" />}><Classbook /></Suspense>}>
-            <Route path=":pageNumber" element={<Suspense fallback={<Spinner animation="border" className="spinner" role="status" />}><Classbook /></Suspense>} />
+        <Route path="/textbook" element={<Suspense fallback={<CustomSpinner/>}><Classbook cards={cards} /></Suspense>}>
+          <Route path=":level" element={<Suspense fallback={<CustomSpinner/>}><Classbook cards={cards} /></Suspense>}>
+            <Route path=":pageNumber" element={<Suspense fallback={<CustomSpinner/>}><Classbook cards={cards} /></Suspense>} />
           </Route>
         </Route>
 
-        <Route path="/dictionary" element={<Classbook />}>
-          <Route path=":level" element={<Classbook />}>
-            <Route path=":pageNumber" element={<Classbook />} />
+        <Route path="/dictionary" element={<Classbook cards={cards}/>}>
+          <Route path=":level" element={<Classbook cards={cards}/>}>
+            <Route path=":pageNumber" element={<Classbook cards={cards}/>} />
           </Route>
         </Route>
 

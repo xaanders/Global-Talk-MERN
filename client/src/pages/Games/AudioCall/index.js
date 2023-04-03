@@ -1,10 +1,11 @@
 import React, { useEffect, useReducer, useState } from 'react'
 import axios from 'axios'
 
-import { Container, Spinner } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import Finished from '../common/Finished/Finished'
 import GetStarted from '../common/GetStarted'
 import AudioGame from './components/AudioGame'
+import CustomSpinner from '../../../common/CustomSpinner'
 
 const initialState = { gameWords: [], answers: [], hearts: 5, points: 0 }
 const gameReducer = (state, action) => {
@@ -68,9 +69,7 @@ function AudioCall() {
     }
 
     if (words.length <= 0) {
-        gamePage = <div className='w-100 d-flex align-items-center justify-content-center pt-5'>
-            <Spinner animation="border" className="spinner" role="status" style={{ width: '100px', height: '100px' }} />
-        </div>;
+        gamePage = <CustomSpinner/>;
     }
 
 

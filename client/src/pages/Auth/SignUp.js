@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom'
 
-import { Button, Container, Form, Spinner } from 'react-bootstrap';
+import { Button, Container, Form } from 'react-bootstrap';
 import classes from './Auth.module.css';
 import Input from './Input';
 
 import { registerUser } from '../../store/actions/userActions';
 import { errorActions } from '../../store/reducers/error-slice';
+import CustomSpinner from '../../common/CustomSpinner';
 
 
 function SignUp() {
@@ -94,7 +95,7 @@ function SignUp() {
                                     <p key={i} className='text text3 text-error'>{item}</p>
                             ))}
                             {authState.loading &&
-                                <Spinner animation="border" className="spinner" role="status" />}
+                                <CustomSpinner/>}
                         </Form.Text>
 
                     </Form>

@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { Button, Container, Form, Spinner } from 'react-bootstrap'
+import { Button, Container, Form } from 'react-bootstrap'
 import classes from './Auth.module.css'
 import Input from './Input'
 import { loginUser } from '../../store/actions/userActions';
 import { errorActions } from '../../store/reducers/error-slice';
 import { useNavigate } from 'react-router-dom';
+import CustomSpinner from '../../common/CustomSpinner';
 
 function LogIn() {
     const dispatch = useDispatch();
@@ -71,7 +72,7 @@ function LogIn() {
                                     <p key={i} className='text text3 text-error'>{item}</p>
                             ))}
                             {authState.loading &&
-                                <Spinner animation="border" className="spinner" role="status" />}
+                               <CustomSpinner/>}
                         </Form.Text>
 
                     </Form>

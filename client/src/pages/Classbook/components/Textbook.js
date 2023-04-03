@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setUserProfile } from '../../../store/actions/userActions';
 import { userActions } from '../../../store/reducers/user-slice';
 import NoCards from './Cards/NoCards';
-import { Spinner } from 'react-bootstrap';
+import CustomSpinner from '../../../common/CustomSpinner';
 
 function Textbook({ words }) {
     const id = useSelector(state => state.user.userInfo && state.user.userInfo.profile._id);
@@ -25,10 +25,8 @@ function Textbook({ words }) {
 
     return (
         <>
-            {words.length === 0 ?
-                <div className="d-flex justify-content-center my-5">
-                    <Spinner animation="border" className="spinner" role="status" style={{ width: '100px', height: '100px' }} />
-                </div> :
+            {words.length === 0 ? <CustomSpinner/>
+                 :
                 <ClassbookCards words={words} wordHandler={addWordToDictionary} />}
         </>
     )
