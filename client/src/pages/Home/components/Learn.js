@@ -16,13 +16,13 @@ function Learn() {
                         <div className={`${classes.actions} mt-5 d-flex gap-5 gap-md-4`}>
                             <Button className={`button button-rose ${classes['play-links-sprint']}`} variant="link">
                                 <Link to="/sprint">
-                                    <Image className="image" src="assets/images/home/icons/sprint.png" alt="sprint" />
+                                    <Image className={classes.image} src="assets/images/home/icons/sprint.png" alt="sprint" />
                                     <div>Sprint →</div>
                                 </Link>
                             </Button>
                             <Button className={`button button-light-blue ${classes['play-links-audio']}`} variant="link">
                                 <Link to="/audiocall">
-                                    <Image className="image" fluid src="assets/images/home/icons/audio.png" alt="sprint" />
+                                    <Image className={classes.image} fluid src="assets/images/home/icons/audio.png" alt="sprint" />
                                     <div>Audio-call →</div>
                                 </Link>
                             </Button>

@@ -57,49 +57,41 @@
     }
 
 }
+
 @media screen and (max-width: 468px) {
     .learn {
         padding: 2.5rem 0;
         background-color: #ffffff;
     }
-    
+
     .watch {
         padding: 2.5rem 0;
     }
 
 }
+
 .play-links-audio,
 .play-links-sprint {
     width: 172px;
     height: 10.75rem;
     position: relative;
-
 }
 
+@media screen and (max-width: 468px) {
+
+    .play-links-audio,
+    .play-links-sprint {
+        width: 149px;
+        height: 8.75rem;
+        position: relative;
+    }
+}
 
 .play-links-audio div,
 .play-links-sprint div {
     height: 100%;
     display: flex;
-    align-items: flex-end;
     justify-content: center;
-}
-
-.play-links-audio img,
-.play-links-sprint img {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.play-links-audio img {
-    top: -45%;
-    left: 15%
-}
-
-.play-links-sprint img {
-    top: -35%;
-    left: 10%
 }
 
 .actions a,
