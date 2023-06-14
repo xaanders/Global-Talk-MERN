@@ -1,5 +1,6 @@
 .total-box {
     margin: 6.25rem 0;
+    flex: 1 1 50%;
 }
 
 
@@ -15,10 +16,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 2.5rem;
+    padding: 2.5rem;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 600px) {
+
     .total,
     .words-box {
         width: 100%;
@@ -34,18 +37,13 @@
     border-radius: 0.875rem;
 }
 
-.circle {
-    width: 10.875rem;
-    height: 10.875rem;
-    transform: rotate(-90deg);
-    transform-origin: 50% 50%;
-}
 
 .content {
     display: flex;
     flex-direction: column;
     gap: 1.562rem;
 }
+
 @media screen and (max-width: 300px) {
     .circles {
         flex-direction: column;
@@ -73,6 +71,19 @@
     margin: 0;
 }
 
+.circle {
+    width: 10.875rem;
+    height: 10.875rem;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+@media screen and (max-width: 768px) {
+    .circle {
+        width: 7.875rem;
+        height: 7.875rem;
+    }
+}
+
 .actions {
     margin-top: 1.875rem;
 }
@@ -80,6 +91,7 @@
 .label {
     color: #000000 !important;
 }
+
 .total .replay {
     color: #000000 !important;
     background-color: unset !important;
@@ -99,28 +111,37 @@
     gap: 1.25rem;
     box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
     border-radius: 0.875rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
 .words-list {
-    height: 23.5rem;
-    overflow: auto;
+    min-height: 150px;
+    max-height: 250px;
+    overflow: scroll;
     display: flex;
     flex-direction: column;
-    gap: 0.875rem
+    gap: 0.875rem;
+    padding: 10px
 }
+
 @media screen and (max-width: 468px) {
     .knowledge {
         width: 100%;
     }
-    .iknow .title, .idknow .title {
+
+    .knowledge .title {
         font-size: 1.5rem !important;
     }
+
     .content {
         text-align: center;
     }
+
     .content .main-title {
         font-size: 1.5rem !important;
-    } 
+    }
 }
 
 .words-box .title {

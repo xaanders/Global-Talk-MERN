@@ -9,16 +9,15 @@ function CircleItem({circle}) {
     return (
         <div className={classes['circle-box']} key={circle.content.label}>
             <svg
-                className={classes.circle}
-            >
+                className={classes.circle}>
                 <circle
                     className={classes.ring}
                     stroke={circle.mainColor}
                     strokeWidth="5"
                     fill="transparent"
                     r="52"
-                    cx="57"
-                    cy="57"
+                    cx="50%"
+                    cy="50%"
                 />
                 <circle
                     className={classes.ring}
@@ -27,8 +26,8 @@ function CircleItem({circle}) {
                     strokeWidth="5"
                     fill="transparent"
                     r="52"
-                    cx="57"
-                    cy="57"
+                    cx="50%"
+                    cy="50%"
                 />
             </svg>
             <div className={classes['circle-info']}>
